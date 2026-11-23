@@ -1,0 +1,21 @@
+# dependencias
+/node_modules
+
+# next.js
+/.next/
+/out/
+/build
+next-env.d.ts
+*.tsbuildinfo
+
+# secretos: nunca subir archivos .env (solo .env.example)
+.env*
+!.env.example
+n8n/.env
+
+# vercel
+.vercel
+
+# varios
+.DS_Store
+*.log
