@@ -1,0 +1,28 @@
+{
+  "name": "comparador-zapatillas",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@12.3.4",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "^19",
+    "react-dom": "^19",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "typescript": "^5.7",
+    "vitest": "^5.1.1"
+  }
+}
