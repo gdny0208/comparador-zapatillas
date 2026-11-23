@@ -1,6 +1,6 @@
 [
   {
-    "updatedAt": "2026-11-23T20:12:45.918Z",
+    "updatedAt": "2026-11-23T20:37:02.084Z",
     "createdAt": "2026-11-23T18:52:21.862Z",
     "id": "WfScrapingZapat1",
     "name": "workflow-scraping",
@@ -123,7 +123,7 @@
         "type": "n8n-nodes-base.httpRequestTool",
         "typeVersion": 4.2,
         "position": [
-          460,
+          420,
           300
         ],
         "parameters": {
@@ -150,7 +150,7 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          560,
+          580,
           60
         ],
         "parameters": {
@@ -163,7 +163,7 @@
         "type": "@n8n/n8n-nodes-langchain.agent",
         "typeVersion": 3.1,
         "position": [
-          800,
+          820,
           60
         ],
         "parameters": {
@@ -182,7 +182,7 @@
         "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
         "typeVersion": 1.2,
         "position": [
-          740,
+          760,
           300
         ],
         "parameters": {
@@ -212,7 +212,7 @@
         "type": "n8n-nodes-base.httpRequestTool",
         "typeVersion": 4.2,
         "position": [
-          960,
+          940,
           300
         ],
         "parameters": {
@@ -239,7 +239,7 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          1040,
+          1100,
           60
         ],
         "parameters": {
@@ -252,7 +252,7 @@
         "type": "n8n-nodes-base.emailSend",
         "typeVersion": 2.1,
         "position": [
-          860,
+          1340,
           60
         ],
         "parameters": {
@@ -282,7 +282,7 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          1080,
+          1580,
           60
         ],
         "parameters": {
@@ -295,7 +295,7 @@
         "type": "n8n-nodes-base.convertToFile",
         "typeVersion": 1.1,
         "position": [
-          1300,
+          1800,
           60
         ],
         "parameters": {
@@ -314,7 +314,7 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          1520,
+          2020,
           60
         ],
         "parameters": {
@@ -327,7 +327,7 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          1740,
+          2240,
           60
         ],
         "parameters": {
@@ -352,7 +352,7 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          1960,
+          2460,
           60
         ],
         "parameters": {
@@ -378,7 +378,7 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          2180,
+          2680,
           60
         ],
         "parameters": {
@@ -391,7 +391,7 @@
         "type": "n8n-nodes-base.emailSend",
         "typeVersion": 2.1,
         "position": [
-          2400,
+          2900,
           60
         ],
         "parameters": {
@@ -644,9 +644,9 @@
     "meta": null,
     "nodeGroups": [],
     "pinData": null,
-    "versionId": "26f0585e-b4f3-4f71-8653-a076b59e778f",
-    "activeVersionId": "26f0585e-b4f3-4f71-8653-a076b59e778f",
-    "versionCounter": 13,
+    "versionId": "3c2ca813-4100-455f-9d18-e2ab8ad2fd3e",
+    "activeVersionId": "3c2ca813-4100-455f-9d18-e2ab8ad2fd3e",
+    "versionCounter": 14,
     "triggerCount": 2,
     "sourceWorkflowId": null,
     "tags": [],
