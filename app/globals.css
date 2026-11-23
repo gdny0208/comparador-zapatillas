@@ -23,9 +23,9 @@ input:focus, select:focus { outline: 2px solid var(--acento); }
 .grilla { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
 .tarjeta { background: #fff; border: 1px solid var(--linea); border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 4px; }
 .tienda { align-self: flex-start; font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 999px; background: #eef2ff; color: #3730a3; }
-.tienda-thebox { background: #ecfdf5; color: #065f46; }
-.tienda-thn { background: #eff6ff; color: #1e40af; }
-.tienda-hiperatos { background: #fef2f2; color: #991b1b; }
+.tienda-footloose { background: #ecfdf5; color: #065f46; }
+.tienda-oechsle { background: #eff6ff; color: #1e40af; }
+.tienda-estilos { background: #fef2f2; color: #991b1b; }
 .marca { margin: 8px 0 0; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--suave); }
 .modelo { margin: 0; font-size: 16px; line-height: 1.3; }
 .precio { margin: 6px 0 0; font-size: 22px; font-weight: 800; }
