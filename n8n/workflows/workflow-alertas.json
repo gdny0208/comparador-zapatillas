@@ -1,0 +1,100 @@
+[
+  {
+    "updatedAt": "2026-11-23T18:52:16.897Z",
+    "createdAt": "2026-11-23T18:52:16.897Z",
+    "id": "WfAlertasZapat01",
+    "name": "workflow-alertas",
+    "description": null,
+    "active": true,
+    "isArchived": false,
+    "nodes": [
+      {
+        "id": "a1",
+        "name": "Error Trigger",
+        "type": "n8n-nodes-base.errorTrigger",
+        "typeVersion": 1,
+        "position": [
+          0,
+          0
+        ],
+        "parameters": {}
+      },
+      {
+        "id": "a2",
+        "name": "Correo de alerta",
+        "type": "n8n-nodes-base.emailSend",
+        "typeVersion": 2.1,
+        "position": [
+          260,
+          0
+        ],
+        "parameters": {
+          "fromEmail": "giuseppe.delnegro@utec.edu.pe",
+          "toEmail": "giuseppe.delnegro@utec.edu.pe",
+          "subject": "=[ALERTA n8n] Falló {{ $json.workflow.name }} - Giuseppe Antonio Del Negro Yabar",
+          "emailFormat": "text",
+          "text": "=El workflow principal de scraping falló.\n\nWorkflow: {{ $json.workflow.name }} (id {{ $json.workflow.id }})\nEjecución: {{ $json.execution.id }}\nModo: {{ $json.execution.mode }}\nÚltimo nodo: {{ $json.execution.lastNodeExecuted }}\nError: {{ $json.execution.error.message }}\nVer ejecución: {{ $json.execution.url }}",
+          "options": {
+            "appendAttribution": false
+          }
+        },
+        "credentials": {
+          "smtp": {
+            "id": "prICT8Ipt52wbVVG",
+            "name": "SMTP Gmail"
+          }
+        }
+      }
+    ],
+    "connections": {
+      "Error Trigger": {
+        "main": [
+          [
+            {
+              "node": "Correo de alerta",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "settings": {
+      "executionOrder": "v1"
+    },
+    "staticData": null,
+    "meta": null,
+    "nodeGroups": [],
+    "pinData": null,
+    "versionId": "46b7e776-261b-4e0b-a08f-11626a071c0c",
+    "activeVersionId": "46b7e776-261b-4e0b-a08f-11626a071c0c",
+    "versionCounter": 1,
+    "triggerCount": 0,
+    "sourceWorkflowId": null,
+    "tags": [],
+    "shared": [
+      {
+        "updatedAt": "2026-11-23T18:52:16.897Z",
+        "createdAt": "2026-11-23T18:52:16.897Z",
+        "role": "workflow:owner",
+        "workflowId": "WfAlertasZapat01",
+        "projectId": "23qMLcxP31TX2B6L",
+        "project": {
+          "updatedAt": "2026-11-23T19:00:59.955Z",
+          "createdAt": "2026-11-23T18:49:00.758Z",
+          "id": "23qMLcxP31TX2B6L",
+          "name": "Giuseppe Del Negro <giuseppe.delnegro@utec.edu.pe>",
+          "type": "personal",
+          "icon": null,
+          "description": null,
+          "customTelemetryTags": [],
+          "creatorId": "00041cc4-8a44-46c2-b28b-d65febc52bd0"
+        }
+      }
+    ],
+    "versionMetadata": {
+      "name": null,
+      "description": null
+    }
+  }
+]
