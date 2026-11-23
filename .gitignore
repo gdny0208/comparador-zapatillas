@@ -19,3 +19,6 @@ n8n/.env
 # varios
 .DS_Store
 *.log
+
+# material de entrega del examen (no es parte del código)
+entrega/
