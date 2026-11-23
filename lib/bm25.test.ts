@@ -46,6 +46,11 @@ describe('buscar (BM25 sobre marca y modelo)', () => {
     expect(orden('zapatillas atletico')[0]).toBe('Estilos|Zapatillas Puma Atlético Hombre Smash 3.0')
   })
 
+  // CASO 7: prueba de BM25 rota a propósito para demostrar que el pipeline bloquea el merge
+  it('prueba rota a propósito: espera que "nike running hombre" empiece por una Puma', () => {
+    expect(orden('nike running hombre')[0]).toBe('Estilos|Zapatillas Puma Atlético Hombre Smash 3.0')
+  })
+
   it('los puntajes van de mayor a menor y excluye puntaje 0', () => {
     const r = buscar('nike running', productos)
     expect(r.map((x) => x.puntaje)).toEqual([...r.map((x) => x.puntaje)].sort((a, b) => b - a))
